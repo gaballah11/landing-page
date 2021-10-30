@@ -40,7 +40,7 @@ let topNav = buttonsList.children;
 for(let i = 1; i <=sections.length; ++i){
   let node = document.createElement("A");
   buttonsList.appendChild(node);
-  node.outerHTML = `<a class="menu__link" data-link= "section${i}" href="#section${i}">Section ${i}</a>`
+  node.outerHTML = `<a class="menu__link" data-link= "section${i}">Section ${i}</a>`
   
 }
 
@@ -77,7 +77,7 @@ const ScrollTo = () => {
         a.preventDefault();
         const targ = a.target;
         document.getElementById(targ.dataset.link)
-          .scrollIntoView({block: "center", behavior: "smooth"});
+          .scrollIntoView({block: "start", behavior: "smooth"});
       }
       )
     }

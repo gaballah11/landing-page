@@ -101,8 +101,7 @@ a{
 }
 
 .navbar__menu .menu__link:hover {
-    background: #333;
-    color: #fff;
+    background: rgb(128, 128, 128);
     transition: ease 0.3s all;
 }
 
